@@ -8,11 +8,11 @@ def check_events(ai_set, screen, penguin, bullets):
         if event.type == pygame.QUIT:
             sys.exit()
         elif event.type == pygame.KEYDOWN:
-           check_keydown_events(penguin, event, ai_set, bullets, screen)
+             check_keydown_events(penguin, event, ai_set, bullets, screen)
         elif event.type == pygame.KEYUP:
             check_keyup_events(penguin, event)
 
-def check_keydown_events(penguin,event,ai_set,screen, bullets):
+def check_keydown_events(penguin, event, ai_set, bullets, screen):
     # нажатие клавиши
      if event.key == pygame.K_RIGHT:
          # Переместить корабль вправо.
@@ -28,7 +28,6 @@ def check_keydown_events(penguin,event,ai_set,screen, bullets):
          penguin.moove_down = True
      elif event.key == pygame.K_SPACE:
          new_bullet = Bullet(ai_set, screen, penguin)
-         # bullets = pygame.sprite.Group()
          bullets.add(new_bullet)
 
 def check_keyup_events(penguin, event):

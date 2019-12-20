@@ -10,7 +10,7 @@ def startgame():
     screen = pygame.display.set_mode((ai_set.screen_width, ai_set.screen_height))
     pygame.display.set_caption('buugggssss')
     penguin = Penguin(screen,  ai_set)
-    bullets = pygame.sprite.Group()
+    bullets = Group()
     while True:
        gf.check_events(ai_set, screen, penguin, bullets)
        penguin.update()
