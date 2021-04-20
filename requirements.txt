@@ -26,7 +26,7 @@ packaging==19.2
 pathlib2==2.3.5
 pip-tools==4.3.0
 pluggy==0.13.0
-py==1.8.0
+py==1.10.0
 pycodestyle==2.5.0
 pycrypto==2.6.1
 pyflakes==2.1.1
