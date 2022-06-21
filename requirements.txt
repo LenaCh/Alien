@@ -21,7 +21,7 @@ keyring==10.6.0
 keyrings.alt==3.0
 mccabe==0.6.1
 more-itertools==5.0.0
-numpy==1.13.3
+numpy==1.22.0
 packaging==19.2
 pathlib2==2.3.5
 pip-tools==4.3.0
